@@ -7,7 +7,7 @@ describe("Read OTP", function () {
 
         var ews = require('ews-javascript-api');
         var service = new ews.ExchangeService(ews.ExchangeVersion.Exchange2013);
-        service.Credentials = new ews.ExchangeCredentials("Aasim_anwar@outlook.com", "Aasim_ali92");
+        service.Credentials = new ews.ExchangeCredentials("Aasim_anwar@outlook.com", "*********");
         service.Url = new ews.Uri("https://outlook.office365.com/Ews/Exchange.asmx");
         ews.Folder.Bind(service, ews.WellKnownFolderName.Inbox).then(function (MailInbox) {
             var view = new ews.ItemView(10);
