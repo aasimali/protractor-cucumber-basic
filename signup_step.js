@@ -2,7 +2,7 @@ var login_steps = function () {
 
     this.Given("I am on the homepage", function (callback) {
         browser.waitForAngularEnabled(false);
-        browser.get('https://www.osianama.com').then(function () {
+        browser.get('https://aasim.joomla.com/').then(function () {
             callback();
         }, function (err) {
             callback('Unable to redirect to homepage');
