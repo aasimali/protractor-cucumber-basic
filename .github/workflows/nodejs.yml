@@ -4,16 +4,12 @@
 name: CICD set up
 
 on:
-schedule:
-    - cron: "*/2 * * * *"
-  # pull_request:
-  # push:
-  #   branches:
-  #     - master
-
+  schedule:
+  - cron: "*/2 * * * *"
+ 
 jobs:
-  build:
-
+   my_job:
+    name: deploy to staging
     runs-on: ubuntu-latest
 
     strategy:
