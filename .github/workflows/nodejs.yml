@@ -6,10 +6,10 @@ name: CICD set up
 on:
 schedule:
     - cron: "*/2 * * * *"
-  pull_request:
-  push:
-    branches:
-      - master
+  # pull_request:
+  # push:
+  #   branches:
+  #     - master
 
 jobs:
   build:
