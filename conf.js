@@ -17,6 +17,13 @@ exports.config = {
     format: 'pretty',
     keepAlive: false
   },
+  capabilities: {
+    browserName: 'chrome',
+  
+    chromeOptions: {
+       args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+     }
+  },
 
 allScriptsTimeout: 18000,
   onPrepare: function() {
