@@ -4,12 +4,12 @@
 name: CICD set up
 
 on:
-  # push:
-  #   branches: [ master ]
-  # pull_request:
-  #   branches: [ master ]
+  pull_request:
+  push:
+    branches:
+      - master
   schedule:
-    - cron:  "*/2 * * * *"
+    - cron: "*/1 * * * *"
 
 jobs:
   build:
