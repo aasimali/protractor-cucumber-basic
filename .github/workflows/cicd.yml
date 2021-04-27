@@ -3,11 +3,7 @@
 
 name: Node.js CI
 
-on:
-  push:
-    branches:
-    - main
-    - release/*
+on: [push]
 
 jobs:
   my_job:
