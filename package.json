@@ -12,8 +12,6 @@
     "protractor-jasmine2-html-reporter": "0.0.7"
   },
   "scripts": {
-    "prestart-webdriver": "webdriver-manager update",
-    "start-webdriver": "webdriver-manager start"
-    
+    "test": "npm install && webdriver-manager update && protractor conf.js"
   }
 }
